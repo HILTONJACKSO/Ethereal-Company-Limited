@@ -1,0 +1,21 @@
+{
+  "name": "Ethereal Company Limited",
+  "short_name": "Ethereal",
+  "description": "Premium multi-sector business management, construction, engineering, and logistics enterprise in Liberia and Sierra Leone.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#020c1b",
+  "theme_color": "#60045B",
+  "icons": [
+    {
+      "src": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=192&q=80",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=512&q=80",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
