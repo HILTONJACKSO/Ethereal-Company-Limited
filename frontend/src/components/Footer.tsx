@@ -37,12 +37,7 @@ export default function Footer() {
 
   const currentYear = new Date().getFullYear();
 
-  const socialLinks = [
-    { icon: <FaFacebook className="fs-6" />, url: 'https://facebook.com', label: 'Facebook' },
-    { icon: <FaTwitter className="fs-6" />, url: 'https://twitter.com', label: 'Twitter' },
-    { icon: <FaLinkedin className="fs-6" />, url: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: <FaInstagram className="fs-6" />, url: 'https://instagram.com', label: 'Instagram' }
-  ];
+
 
   return (
     <footer className="position-relative overflow-hidden" style={{ background: '#020c1b', color: '#EEF0F1' }}>
@@ -71,38 +66,7 @@ export default function Footer() {
               Engineering solutions. Building futures. Delivering value through world-class logistics and civil infrastructure development.
             </p>
             
-            {/* Social Icons Grid */}
-            <div className="d-flex gap-2">
-              {socialLinks.map((social) => (
-                <a 
-                  key={social.label}
-                  href={social.url} 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-sm text-white rounded-circle d-flex align-items-center justify-content-center hover-scale" 
-                  style={{ 
-                    width: '36px', 
-                    height: '36px', 
-                    background: 'rgba(255,255,255,0.04)', 
-                    border: '1px solid rgba(255,255,255,0.08)',
-                    transition: 'all 0.3s ease'
-                  }} 
-                  aria-label={social.label}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.background = 'linear-gradient(135deg, var(--brand-royal-blue), var(--brand-deep-purple))';
-                    e.currentTarget.style.borderColor = 'transparent';
-                    e.currentTarget.style.boxShadow = '0 0 10px rgba(6, 62, 118, 0.4)';
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.background = 'rgba(255,255,255,0.04)';
-                    e.currentTarget.style.borderColor = 'rgba(255,255,255,0.08)';
-                    e.currentTarget.style.boxShadow = 'none';
-                  }}
-                >
-                  {social.icon}
-                </a>
-              ))}
-            </div>
+
           </div>
 
           {/* Column 2: Quick Links */}

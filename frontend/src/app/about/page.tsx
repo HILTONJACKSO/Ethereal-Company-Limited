@@ -111,11 +111,6 @@ export default function AboutPage() {
     { title: 'Collaboration', icon: <FaHandshake className="text-success fs-4" />, description: 'Fostering mutual success and regional growth with international NGO partners.' }
   ];
 
-  const teamMembers = [
-    { name: 'Dr. Jefferson Cooper', role: 'Chief Executive Officer', bio: 'Over 20 years of operations management in infrastructure development and trade across Liberia.', image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=300&q=80' },
-    { name: 'Fatu Massaquoi', role: 'Head of Logistics & Supply Chain', bio: 'Expert in maritime operations, port customs clearance, and heavy-cargo route distribution.', image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=300&q=80' },
-    { name: 'Amara Kamara', role: 'Chief Engineering Consultant', bio: 'Senior structural civil engineer who spearheaded key stabilization and municipal road works.', image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=300&q=80' }
-  ];
 
   const timelineSteps = [
     { year: '2016', title: 'Company Inception', desc: 'Ethereal registered as a logistics supplier in Monrovia, serving local building sites.' },
@@ -305,42 +300,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* 7. LEADERSHIP TEAM */}
-      <section className="py-5 border-top border-bottom transition-all" style={{ background: isDark ? 'var(--background)' : '#ffffff', borderColor: isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.05)' }}>
-        <div className="container">
-          <div className="text-center mb-5" data-aos="fade-up">
-            <span className="text-uppercase font-sans fw-bold tracking-widest fs-8 d-block mb-2" style={{ color: primaryColor }}>Governance</span>
-            <h3 className="fw-bold font-montserrat fs-3" style={{ color: textColor }}>Leadership Team</h3>
-            <p className="font-sans fs-7 mt-2" style={{ color: mutedTextColor }}>Executive members directing our African strategy and project execution.</p>
-            <div className="mx-auto mt-2" style={{ width: '40px', height: '3px', background: 'var(--brand-cyan-blue)' }}></div>
-          </div>
-
-          <div className="row g-4 justify-content-center">
-            {teamMembers.map((member, idx) => (
-              <div key={member.name} className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay={idx * 100}>
-                <div className="p-4 rounded-4 text-center border shadow-sm h-100" style={{ background: isDark ? '#07162c' : '#ffffff', borderColor: isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.06)' }}>
-                  <div className="position-relative overflow-hidden rounded-circle mx-auto mb-3" style={{ width: '130px', height: '130px', border: `3px solid ${primaryColor}` }}>
-                    <img 
-                      src={member.image} 
-                      alt={member.name} 
-                      className="w-100 h-100 object-fit-cover"
-                    />
-                  </div>
-                  <h5 className="fw-bold font-montserrat mb-1" style={{ color: textColor }}>{member.name}</h5>
-                  <span className="text-uppercase fs-8 fw-bold font-sans mb-3 d-block" style={{ color: primaryColor }}>{member.role}</span>
-                  <p className="fs-7 mb-0 font-sans" style={{ color: mutedTextColor, lineHeight: '1.6' }}>{member.bio}</p>
-                  
-                  {/* Social/Mail contact details */}
-                  <div className="d-flex justify-content-center gap-2 mt-4 pt-2 border-top" style={{ borderColor: 'rgba(0,0,0,0.05)' }}>
-                    <a href="https://linkedin.com" className="btn btn-sm btn-link text-muted hover-link"><FaLinkedin className="fs-5" /></a>
-                    <a href="mailto:info@ethereal.com" className="btn btn-sm btn-link text-muted hover-link"><FaEnvelope className="fs-5" /></a>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* 8. INTERACTIVE TIMELINE */}
       <section className="py-5 transition-all" style={{ background: isDark ? 'linear-gradient(180deg, var(--background) 0%, rgba(242, 129, 1, 0.04) 100%)' : 'linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(242, 129, 1, 0.02) 100%)' }}>
