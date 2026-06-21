@@ -3,11 +3,11 @@ module.exports = {
     {
       name: 'ethera-frontend',
       script: 'npm',
-      args: 'start -- -p 3001',
+      args: 'start -- -p 3005',
       cwd: './frontend',
       env: {
         NODE_ENV: 'production',
-        PORT: 3001,
+        PORT: 3005,
       },
     },
     {
